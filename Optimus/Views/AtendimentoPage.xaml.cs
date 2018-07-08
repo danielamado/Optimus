@@ -35,6 +35,8 @@ namespace Optimus
                 stlAtendimento2.IsVisible = (iTela == 2);
                 stlRelatorio.IsVisible = (iTela == 3);
                 stlEncaminhamento.IsVisible = (iTela == 4);
+
+                imgSeta.Source = ((iTela == 1) ? "seta2.png" : "seta.png");
             }
         }
 
@@ -50,23 +52,23 @@ namespace Optimus
             {
                 Command = new Command(() => stlPessoaDetalhe_Click())
             });
-        }
 
-        private void btnIniciar_Clicked(object sender, EventArgs e)
-        {
-            Tela = 2;
-        }
-        private void btnAtendimento_Clicked(object sender, EventArgs e)
-        {
-            Tela = 0;
-        }
-        private void btnRelatorio_Clicked(object sender, EventArgs e)
-        {
-            Tela = 3;
-        }
-        private void btnEncaminhamento_Clicked(object sender, EventArgs e)
-        {
-            Tela = 4;
+            btnIniciar.GestureRecognizers.Add(new TapGestureRecognizer
+            {
+                Command = new Command(() => Tela = 2)
+            });
+            tabAtendimento.GestureRecognizers.Add(new TapGestureRecognizer
+            {
+                Command = new Command(() => Tela = 0)
+            });
+            tabRelatorio.GestureRecognizers.Add(new TapGestureRecognizer
+            {
+                Command = new Command(() => Tela = 3)
+            });
+            tabEncaminhamento.GestureRecognizers.Add(new TapGestureRecognizer
+            {
+                Command = new Command(() => Tela = 4)
+            });
         }
 
         private void stlPessoa_Click()

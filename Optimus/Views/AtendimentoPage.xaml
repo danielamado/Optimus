@@ -32,7 +32,7 @@
                     <RowDefinition
                         Height="*" />
                     <RowDefinition
-                        Height="100" />
+                        Height="130" />
                 </Grid.RowDefinitions>
                 <AbsoluteLayout
                     Grid.Row="2"
@@ -47,9 +47,11 @@
                         VerticalOptions="Center"
                         AbsoluteLayout.LayoutFlags="SizeProportional"
                         AbsoluteLayout.LayoutBounds="0,0,1,1">
-                        <Button
-                            Text="Iniciar atendimento..."
-                            Clicked="btnIniciar_Clicked" />
+                        <Image
+                            Source="inicio.png"
+                            WidthRequest="300"
+                            HeightRequest="300"
+                            x:Name="btnIniciar" />
                     </StackLayout>
                     <StackLayout
                         x:Name="stlAtendimento2"
@@ -78,11 +80,13 @@
                                 HorizontalOptions="FillAndExpand"
                                 VerticalOptions="StartAndExpand">
                                 <StackLayout
-                                    HeightRequest="50"
+                                    HeightRequest="70"
                                     Padding="0,50,0,0"
                                     VerticalOptions="Start"
                                     HorizontalOptions="FillAndExpand">
-                                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Grid
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition
                                                 Width="2*" />
@@ -100,7 +104,7 @@
                                             <Label
                                                 Text="Paciente"
                                                 TextColor="Black"
-                                                FontSize="22" />
+                                                FontSize="26" />
                                         </StackLayout>
                                         <StackLayout
                                             HorizontalOptions="EndAndExpand"
@@ -110,39 +114,37 @@
                                             <Label
                                                 Text=" "
                                                 TextColor="Black"
-                                                FontSize="22" />
+                                                FontSize="26" />
                                         </StackLayout>
                                         <StackLayout
                                             HorizontalOptions="CenterAndExpand"
                                             VerticalOptions="Center"
                                             Grid.Row="0"
                                             Grid.Column="3">
-                                            <Label
-                                                Text="Sim"
-                                                TextColor="Green"
-                                                FontSize="22" />
+                                            <Image
+                                                Source="sim.png"
+                                                WidthRequest="50"
+                                                HeightRequest="50" />
                                         </StackLayout>
                                         <StackLayout
                                             HorizontalOptions="CenterAndExpand"
                                             VerticalOptions="Center"
                                             Grid.Row="0"
                                             Grid.Column="4">
-                                            <Label
-                                                Text="Não"
-                                                TextColor="Red"
-                                                FontSize="22" />
+                                            <Image
+                                                Source="nao.png"
+                                                WidthRequest="50"
+                                                HeightRequest="50" />
                                         </StackLayout>
                                     </Grid>
                                 </StackLayout>
-                                
-                                
-                                
-                                
-                                  <StackLayout
-                                    HeightRequest="50"
+                                <StackLayout
+                                    HeightRequest="70"
                                     VerticalOptions="Start"
                                     HorizontalOptions="FillAndExpand">
-                                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Grid
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition
                                                 Width="2*" />
@@ -160,7 +162,7 @@
                                             <Label
                                                 Text="Familiar"
                                                 TextColor="Black"
-                                                FontSize="22" />
+                                                FontSize="26" />
                                         </StackLayout>
                                         <StackLayout
                                             HorizontalOptions="EndAndExpand"
@@ -170,39 +172,37 @@
                                             <Label
                                                 Text=" "
                                                 TextColor="Black"
-                                                FontSize="22" />
+                                                FontSize="26" />
                                         </StackLayout>
                                         <StackLayout
                                             HorizontalOptions="CenterAndExpand"
                                             VerticalOptions="Center"
                                             Grid.Row="0"
                                             Grid.Column="3">
-                                            <Label
-                                                Text="Sim"
-                                                TextColor="Green"
-                                                FontSize="22" />
+                                            <Image
+                                                Source="sim.png"
+                                                WidthRequest="50"
+                                                HeightRequest="50" />
                                         </StackLayout>
                                         <StackLayout
                                             HorizontalOptions="CenterAndExpand"
                                             VerticalOptions="Center"
                                             Grid.Row="0"
                                             Grid.Column="4">
-                                            <Label
-                                                Text="Não"
-                                                TextColor="Red"
-                                                FontSize="22" />
+                                            <Image
+                                                Source="nao.png"
+                                                WidthRequest="50"
+                                                HeightRequest="50" />
                                         </StackLayout>
                                     </Grid>
                                 </StackLayout>
-                                
-                                
-                                
-                                
-                                  <StackLayout
-                                    HeightRequest="50"
+                                <StackLayout
+                                    HeightRequest="70"
                                     VerticalOptions="Start"
                                     HorizontalOptions="FillAndExpand">
-                                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Grid
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition
                                                 Width="2*" />
@@ -220,7 +220,7 @@
                                             <Label
                                                 Text="Prescrição Médica"
                                                 TextColor="Black"
-                                                FontSize="22" />
+                                                FontSize="26" />
                                         </StackLayout>
                                         <StackLayout
                                             HorizontalOptions="EndAndExpand"
@@ -237,32 +237,30 @@
                                             VerticalOptions="Center"
                                             Grid.Row="0"
                                             Grid.Column="3">
-                                            <Label
-                                                Text="Sim"
-                                                TextColor="Green"
-                                                FontSize="22" />
+                                            <Image
+                                                Source="sim.png"
+                                                WidthRequest="50"
+                                                HeightRequest="50" />
                                         </StackLayout>
                                         <StackLayout
                                             HorizontalOptions="CenterAndExpand"
                                             VerticalOptions="Center"
                                             Grid.Row="0"
                                             Grid.Column="4">
-                                            <Label
-                                                Text="Não"
-                                                TextColor="Red"
-                                                FontSize="22" />
+                                            <Image
+                                                Source="nao.png"
+                                                WidthRequest="50"
+                                                HeightRequest="50" />
                                         </StackLayout>
                                     </Grid>
                                 </StackLayout>
-                                
-                                
-                                
-                                
-                                  <StackLayout
-                                    HeightRequest="50"
+                                <StackLayout
+                                    HeightRequest="70"
                                     VerticalOptions="Start"
                                     HorizontalOptions="FillAndExpand">
-                                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Grid
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition
                                                 Width="2*" />
@@ -280,7 +278,7 @@
                                             <Label
                                                 Text="SUS"
                                                 TextColor="Black"
-                                                FontSize="22" />
+                                                FontSize="26" />
                                         </StackLayout>
                                         <StackLayout
                                             HorizontalOptions="EndAndExpand"
@@ -297,32 +295,30 @@
                                             VerticalOptions="Center"
                                             Grid.Row="0"
                                             Grid.Column="3">
-                                            <Label
-                                                Text="Sim"
-                                                TextColor="Green"
-                                                FontSize="22" />
+                                            <Image
+                                                Source="sim.png"
+                                                WidthRequest="50"
+                                                HeightRequest="50" />
                                         </StackLayout>
                                         <StackLayout
                                             HorizontalOptions="CenterAndExpand"
                                             VerticalOptions="Center"
                                             Grid.Row="0"
                                             Grid.Column="4">
-                                            <Label
-                                                Text="Não"
-                                                TextColor="Red"
-                                                FontSize="22" />
+                                            <Image
+                                                Source="nao.png"
+                                                WidthRequest="50"
+                                                HeightRequest="50" />
                                         </StackLayout>
                                     </Grid>
                                 </StackLayout>
-                                
-                                
-                                
-                                
-                                  <StackLayout
-                                    HeightRequest="50"
+                                <StackLayout
+                                    HeightRequest="70"
                                     VerticalOptions="Start"
                                     HorizontalOptions="FillAndExpand">
-                                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Grid
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition
                                                 Width="2*" />
@@ -340,7 +336,7 @@
                                             <Label
                                                 Text="Lista gratuíta"
                                                 TextColor="Black"
-                                                FontSize="22" />
+                                                FontSize="26" />
                                         </StackLayout>
                                         <StackLayout
                                             HorizontalOptions="EndAndExpand"
@@ -357,32 +353,30 @@
                                             VerticalOptions="Center"
                                             Grid.Row="0"
                                             Grid.Column="3">
-                                            <Label
-                                                Text="Sim"
-                                                TextColor="Green"
-                                                FontSize="22" />
+                                            <Image
+                                                Source="sim.png"
+                                                WidthRequest="50"
+                                                HeightRequest="50" />
                                         </StackLayout>
                                         <StackLayout
                                             HorizontalOptions="CenterAndExpand"
                                             VerticalOptions="Center"
                                             Grid.Row="0"
                                             Grid.Column="4">
-                                            <Label
-                                                Text="Não"
-                                                TextColor="Red"
-                                                FontSize="22" />
+                                            <Image
+                                                Source="nao.png"
+                                                WidthRequest="50"
+                                                HeightRequest="50" />
                                         </StackLayout>
                                     </Grid>
                                 </StackLayout>
-                                
-                                
-                                
-                                
-                                  <StackLayout
-                                    HeightRequest="50"
+                                <StackLayout
+                                    HeightRequest="70"
                                     VerticalOptions="Start"
                                     HorizontalOptions="FillAndExpand">
-                                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Grid
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition
                                                 Width="2*" />
@@ -400,7 +394,7 @@
                                             <Label
                                                 Text="Alto custo"
                                                 TextColor="Black"
-                                                FontSize="22" />
+                                                FontSize="26" />
                                         </StackLayout>
                                         <StackLayout
                                             HorizontalOptions="EndAndExpand"
@@ -417,31 +411,30 @@
                                             VerticalOptions="Center"
                                             Grid.Row="0"
                                             Grid.Column="3">
-                                            <Label
-                                                Text="Sim"
-                                                TextColor="Green"
-                                                FontSize="22" />
+                                            <Image
+                                                Source="sim.png"
+                                                WidthRequest="50"
+                                                HeightRequest="50" />
                                         </StackLayout>
                                         <StackLayout
                                             HorizontalOptions="CenterAndExpand"
                                             VerticalOptions="Center"
                                             Grid.Row="0"
                                             Grid.Column="4">
-                                            <Label
-                                                Text="Não"
-                                                TextColor="Red"
-                                                FontSize="22" />
+                                            <Image
+                                                Source="nao.png"
+                                                WidthRequest="50"
+                                                HeightRequest="50" />
                                         </StackLayout>
                                     </Grid>
                                 </StackLayout>
-                                
-                                
-                                
-                                  <StackLayout
-                                    HeightRequest="50"
+                                <StackLayout
+                                    HeightRequest="70"
                                     VerticalOptions="Start"
                                     HorizontalOptions="FillAndExpand">
-                                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Grid
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition
                                                 Width="2*" />
@@ -459,7 +452,7 @@
                                             <Label
                                                 Text="Experimental"
                                                 TextColor="Black"
-                                                FontSize="22" />
+                                                FontSize="26" />
                                         </StackLayout>
                                         <StackLayout
                                             HorizontalOptions="EndAndExpand"
@@ -476,83 +469,30 @@
                                             VerticalOptions="Center"
                                             Grid.Row="0"
                                             Grid.Column="3">
-                                            <Label
-                                                Text="Sim"
-                                                TextColor="Green"
-                                                FontSize="22" />
+                                            <Image
+                                                Source="sim.png"
+                                                WidthRequest="50"
+                                                HeightRequest="50" />
                                         </StackLayout>
                                         <StackLayout
                                             HorizontalOptions="CenterAndExpand"
                                             VerticalOptions="Center"
                                             Grid.Row="0"
                                             Grid.Column="4">
-                                            <Label
-                                                Text="Não"
-                                                TextColor="Red"
-                                                FontSize="22" />
+                                            <Image
+                                                Source="nao.png"
+                                                WidthRequest="50"
+                                                HeightRequest="50" />
                                         </StackLayout>
                                     </Grid>
                                 </StackLayout>
-                                
-                                
-                                
-                                  <StackLayout
-                                    HeightRequest="50"
+                                <StackLayout
+                                    HeightRequest="70"
                                     VerticalOptions="Start"
                                     HorizontalOptions="FillAndExpand">
-                                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition
-                                                Width="2*" />
-                                            <ColumnDefinition
-                                                Width="*" />
-                                            <ColumnDefinition
-                                                Width="100" />
-                                            <ColumnDefinition
-                                                Width="100" />
-                                        </Grid.ColumnDefinitions>
-                                        <StackLayout
-                                            VerticalOptions="CenterAndExpand"
-                                            Grid.Row="0"
-                                            Grid.ColumnSpan="2"
-                                            Grid.Column="0">
-                                            <Label
-                                                Text="Tratamento anterior sem sucesso"
-                                                TextColor="Black"
-                                                FontSize="22" />
-                                        </StackLayout>
-                                       
-                                        <StackLayout
-                                            HorizontalOptions="CenterAndExpand"
-                                            VerticalOptions="Center"
-                                            Grid.Row="0"
-                                            Grid.Column="3">
-                                            <Label
-                                                Text="Sim"
-                                                TextColor="Green"
-                                                FontSize="22" />
-                                        </StackLayout>
-                                        <StackLayout
-                                            HorizontalOptions="CenterAndExpand"
-                                            VerticalOptions="Center"
-                                            Grid.Row="0"
-                                            Grid.Column="4">
-                                            <Label
-                                                Text="Não"
-                                                TextColor="Red"
-                                                FontSize="22" />
-                                        </StackLayout>
-                                    </Grid>
-                                </StackLayout>
-                                
-                                
-                                
-                                
-                                  <StackLayout
-                                    HeightRequest="50"
-                                    VerticalOptions="Start"
-                                    HorizontalOptions="FillAndExpand">
-                                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Grid
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition
                                                 Width="2*" />
@@ -570,7 +510,7 @@
                                             <Label
                                                 Text="Risco de Vida"
                                                 TextColor="Black"
-                                                FontSize="22" />
+                                                FontSize="26" />
                                         </StackLayout>
                                         <StackLayout
                                             HorizontalOptions="EndAndExpand"
@@ -587,20 +527,20 @@
                                             VerticalOptions="Center"
                                             Grid.Row="0"
                                             Grid.Column="3">
-                                            <Label
-                                                Text="Sim"
-                                                TextColor="Green"
-                                                FontSize="22" />
+                                            <Image
+                                                Source="sim.png"
+                                                WidthRequest="50"
+                                                HeightRequest="50" />
                                         </StackLayout>
                                         <StackLayout
                                             HorizontalOptions="CenterAndExpand"
                                             VerticalOptions="Center"
                                             Grid.Row="0"
                                             Grid.Column="4">
-                                            <Label
-                                                Text="Não"
-                                                TextColor="Red"
-                                                FontSize="22" />
+                                            <Image
+                                                Source="nao.png"
+                                                WidthRequest="50"
+                                                HeightRequest="50" />
                                         </StackLayout>
                                     </Grid>
                                 </StackLayout>
@@ -679,33 +619,27 @@
                                 Grid.Column="0"
                                 HorizontalOptions="CenterAndExpand"
                                 VerticalOptions="CenterAndExpand">
-                                <Label
-                                    Text="..."
-                                    FontSize="80"
-                                    FontAttributes="Bold"
-                                    TextColor="Black" />
+                                <Image
+                                    Source="documento.png"
+                                    HeightRequest="200" />
                             </StackLayout>
                             <StackLayout
                                 Grid.Row="1"
                                 Grid.Column="1"
                                 HorizontalOptions="CenterAndExpand"
                                 VerticalOptions="CenterAndExpand">
-                                <Label
-                                    Text="..."
-                                    FontSize="80"
-                                    FontAttributes="Bold"
-                                    TextColor="Black" />
+                                <Image
+                                    Source="documento.png"
+                                    HeightRequest="200" />
                             </StackLayout>
                             <StackLayout
                                 Grid.Row="1"
                                 Grid.Column="2"
                                 HorizontalOptions="CenterAndExpand"
                                 VerticalOptions="CenterAndExpand">
-                                <Label
-                                    Text="..."
-                                    FontSize="80"
-                                    FontAttributes="Bold"
-                                    TextColor="Black" />
+                                <Image
+                                    Source="documento.png"
+                                    HeightRequest="200" />
                             </StackLayout>
                             <StackLayout
                                 Grid.Row="2"
@@ -768,9 +702,13 @@
                                 TextColor="White" />
                         </StackLayout>
                         <StackLayout
+                            VerticalOptions="EndAndExpand"
                             WidthRequest="100">
-                            <Label
-                                Text="-)" />
+                            <Image
+                                x:Name="imgSeta"
+                                WidthRequest="75"
+                                HeightRequest="75"
+                                Source="seta.png" />
                         </StackLayout>
                     </StackLayout>
                 </StackLayout>
@@ -878,8 +816,11 @@
                             VerticalOptions="CenterAndExpand"
                             Grid.Row="1"
                             Grid.Column="0">
-                            <Image Source="velho.jpeg" WidthRequest="250" HeightRequest="220" Aspect="AspectFit"/>
-                           
+                            <Image
+                                Source="velho.jpeg"
+                                WidthRequest="250"
+                                HeightRequest="220"
+                                Aspect="AspectFit" />
                         </StackLayout>
                         <StackLayout
                             HorizontalOptions="StartAndExpand"
@@ -922,8 +863,7 @@
                     BackgroundColor="#444444"
                     HorizontalOptions="FillAndExpand"
                     Orientation="Horizontal">
-                    <Grid
-                        HorizontalOptions="FillAndExpand">
+                    <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition
                                 Width="*" />
@@ -932,24 +872,45 @@
                             <ColumnDefinition
                                 Width="*" />
                         </Grid.ColumnDefinitions>
-                        <Button
-                            Text="Atendimento"
-                            x:Name="btnAtendimento"
-                            Clicked="btnAtendimento_Clicked"
+                        <StackLayout
                             Grid.Row="0"
-                            Grid.Column="0" />
-                        <Button
-                            Text="Relatório"
-                            x:Name="btnRelatorio"
-                            Clicked="btnRelatorio_Clicked"
+                            Grid.Column="0"
+                            x:Name="tabAtendimento"
+                            HorizontalOptions="Center">
+                            <Image
+                                Source="atendimento.png" />
+                            <Label
+                                Text="ATENDIMENTO"
+                                TextColor="White"
+                                FontSize="12"
+                                FontAttributes="Bold" />
+                        </StackLayout>
+                        <StackLayout
+                            x:Name="tabRelatorio"
                             Grid.Row="0"
-                            Grid.Column="1" />
-                        <Button
-                            Text="Encaminhamento"
-                            x:Name="btnEncaminhamento"
-                            Clicked="btnEncaminhamento_Clicked"
+                            Grid.Column="1"
+                            HorizontalOptions="Center">
+                            <Image
+                                Source="relatorio.png" />
+                            <Label
+                                Text="RELATÓRIO"
+                                TextColor="White"
+                                FontSize="12"
+                                FontAttributes="Bold" />
+                        </StackLayout>
+                        <StackLayout
+                            x:Name="tabEncaminhamento"
                             Grid.Row="0"
-                            Grid.Column="2" />
+                            Grid.Column="2"
+                            HorizontalOptions="Center">
+                            <Image
+                                Source="encaminhar.png" />
+                            <Label
+                                Text="ENCAMINHAMENTO"
+                                TextColor="White"
+                                FontSize="12"
+                                FontAttributes="Bold" />
+                        </StackLayout>
                     </Grid>
                 </StackLayout>
             </Grid>
