@@ -1,0 +1,958 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Atendimento"
+    x:Class="Optimus.AtendimentoPage">
+    <ContentPage.Content>
+        <StackLayout
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand">
+            <Grid
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                RowSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition
+                        Width="*" />
+                    <ColumnDefinition
+                        Width="200" />
+                    <ColumnDefinition
+                        Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition
+                        Height="110" />
+                    <RowDefinition
+                        Height="100" />
+                    <RowDefinition
+                        Height="*" />
+                    <RowDefinition
+                        Height="175" />
+                    <RowDefinition
+                        Height="*" />
+                    <RowDefinition
+                        Height="100" />
+                </Grid.RowDefinitions>
+                <AbsoluteLayout
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    Grid.RowSpan="3"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand">
+                    <StackLayout
+                        x:Name="stlAtendimento1"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        AbsoluteLayout.LayoutFlags="SizeProportional"
+                        AbsoluteLayout.LayoutBounds="0,0,1,1">
+                        <Button
+                            Text="Iniciar atendimento..."
+                            Clicked="btnIniciar_Clicked" />
+                    </StackLayout>
+                    <StackLayout
+                        x:Name="stlAtendimento2"
+                        HorizontalOptions="Center"
+                        VerticalOptions="StartAndExpand"
+                        AbsoluteLayout.LayoutFlags="SizeProportional"
+                        AbsoluteLayout.LayoutBounds="0,0,1,1">
+                        <Grid
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition
+                                    Width="30" />
+                                <ColumnDefinition
+                                    Width="Auto" />
+                                <ColumnDefinition
+                                    Width="30" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition
+                                    Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <StackLayout
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="StartAndExpand">
+                                <StackLayout
+                                    HeightRequest="50"
+                                    Padding="0,50,0,0"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="FillAndExpand">
+                                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition
+                                                Width="2*" />
+                                            <ColumnDefinition
+                                                Width="*" />
+                                            <ColumnDefinition
+                                                Width="100" />
+                                            <ColumnDefinition
+                                                Width="100" />
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout
+                                            VerticalOptions="CenterAndExpand"
+                                            Grid.Row="0"
+                                            Grid.Column="0">
+                                            <Label
+                                                Text="Paciente"
+                                                TextColor="Black"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="EndAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="1">
+                                            <Label
+                                                Text=" "
+                                                TextColor="Black"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="3">
+                                            <Label
+                                                Text="Sim"
+                                                TextColor="Green"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="4">
+                                            <Label
+                                                Text="Não"
+                                                TextColor="Red"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                                
+                                
+                                
+                                
+                                  <StackLayout
+                                    HeightRequest="50"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="FillAndExpand">
+                                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition
+                                                Width="2*" />
+                                            <ColumnDefinition
+                                                Width="*" />
+                                            <ColumnDefinition
+                                                Width="100" />
+                                            <ColumnDefinition
+                                                Width="100" />
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout
+                                            VerticalOptions="CenterAndExpand"
+                                            Grid.Row="0"
+                                            Grid.Column="0">
+                                            <Label
+                                                Text="Familiar"
+                                                TextColor="Black"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="EndAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="1">
+                                            <Label
+                                                Text=" "
+                                                TextColor="Black"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="3">
+                                            <Label
+                                                Text="Sim"
+                                                TextColor="Green"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="4">
+                                            <Label
+                                                Text="Não"
+                                                TextColor="Red"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                                
+                                
+                                
+                                
+                                  <StackLayout
+                                    HeightRequest="50"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="FillAndExpand">
+                                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition
+                                                Width="2*" />
+                                            <ColumnDefinition
+                                                Width="*" />
+                                            <ColumnDefinition
+                                                Width="100" />
+                                            <ColumnDefinition
+                                                Width="100" />
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout
+                                            VerticalOptions="CenterAndExpand"
+                                            Grid.Row="0"
+                                            Grid.Column="0">
+                                            <Label
+                                                Text="Prescrição Médica"
+                                                TextColor="Black"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="EndAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="1">
+                                            <Label
+                                                Text=" "
+                                                TextColor="Black"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="3">
+                                            <Label
+                                                Text="Sim"
+                                                TextColor="Green"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="4">
+                                            <Label
+                                                Text="Não"
+                                                TextColor="Red"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                                
+                                
+                                
+                                
+                                  <StackLayout
+                                    HeightRequest="50"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="FillAndExpand">
+                                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition
+                                                Width="2*" />
+                                            <ColumnDefinition
+                                                Width="*" />
+                                            <ColumnDefinition
+                                                Width="100" />
+                                            <ColumnDefinition
+                                                Width="100" />
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout
+                                            VerticalOptions="CenterAndExpand"
+                                            Grid.Row="0"
+                                            Grid.Column="0">
+                                            <Label
+                                                Text="SUS"
+                                                TextColor="Black"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="EndAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="1">
+                                            <Label
+                                                Text=" "
+                                                TextColor="Black"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="3">
+                                            <Label
+                                                Text="Sim"
+                                                TextColor="Green"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="4">
+                                            <Label
+                                                Text="Não"
+                                                TextColor="Red"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                                
+                                
+                                
+                                
+                                  <StackLayout
+                                    HeightRequest="50"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="FillAndExpand">
+                                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition
+                                                Width="2*" />
+                                            <ColumnDefinition
+                                                Width="*" />
+                                            <ColumnDefinition
+                                                Width="100" />
+                                            <ColumnDefinition
+                                                Width="100" />
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout
+                                            VerticalOptions="CenterAndExpand"
+                                            Grid.Row="0"
+                                            Grid.Column="0">
+                                            <Label
+                                                Text="Lista gratuíta"
+                                                TextColor="Black"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="EndAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="1">
+                                            <Label
+                                                Text=" "
+                                                TextColor="Black"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="3">
+                                            <Label
+                                                Text="Sim"
+                                                TextColor="Green"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="4">
+                                            <Label
+                                                Text="Não"
+                                                TextColor="Red"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                                
+                                
+                                
+                                
+                                  <StackLayout
+                                    HeightRequest="50"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="FillAndExpand">
+                                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition
+                                                Width="2*" />
+                                            <ColumnDefinition
+                                                Width="*" />
+                                            <ColumnDefinition
+                                                Width="100" />
+                                            <ColumnDefinition
+                                                Width="100" />
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout
+                                            VerticalOptions="CenterAndExpand"
+                                            Grid.Row="0"
+                                            Grid.Column="0">
+                                            <Label
+                                                Text="Alto custo"
+                                                TextColor="Black"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="EndAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="1">
+                                            <Label
+                                                Text=" "
+                                                TextColor="Black"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="3">
+                                            <Label
+                                                Text="Sim"
+                                                TextColor="Green"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="4">
+                                            <Label
+                                                Text="Não"
+                                                TextColor="Red"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                                
+                                
+                                
+                                  <StackLayout
+                                    HeightRequest="50"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="FillAndExpand">
+                                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition
+                                                Width="2*" />
+                                            <ColumnDefinition
+                                                Width="*" />
+                                            <ColumnDefinition
+                                                Width="100" />
+                                            <ColumnDefinition
+                                                Width="100" />
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout
+                                            VerticalOptions="CenterAndExpand"
+                                            Grid.Row="0"
+                                            Grid.Column="0">
+                                            <Label
+                                                Text="Experimental"
+                                                TextColor="Black"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="EndAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="1">
+                                            <Label
+                                                Text=" "
+                                                TextColor="Black"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="3">
+                                            <Label
+                                                Text="Sim"
+                                                TextColor="Green"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="4">
+                                            <Label
+                                                Text="Não"
+                                                TextColor="Red"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                                
+                                
+                                
+                                  <StackLayout
+                                    HeightRequest="50"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="FillAndExpand">
+                                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition
+                                                Width="2*" />
+                                            <ColumnDefinition
+                                                Width="*" />
+                                            <ColumnDefinition
+                                                Width="100" />
+                                            <ColumnDefinition
+                                                Width="100" />
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout
+                                            VerticalOptions="CenterAndExpand"
+                                            Grid.Row="0"
+                                            Grid.ColumnSpan="2"
+                                            Grid.Column="0">
+                                            <Label
+                                                Text="Tratamento anterior sem sucesso"
+                                                TextColor="Black"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                       
+                                        <StackLayout
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="3">
+                                            <Label
+                                                Text="Sim"
+                                                TextColor="Green"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="4">
+                                            <Label
+                                                Text="Não"
+                                                TextColor="Red"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                                
+                                
+                                
+                                
+                                  <StackLayout
+                                    HeightRequest="50"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="FillAndExpand">
+                                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition
+                                                Width="2*" />
+                                            <ColumnDefinition
+                                                Width="*" />
+                                            <ColumnDefinition
+                                                Width="100" />
+                                            <ColumnDefinition
+                                                Width="100" />
+                                        </Grid.ColumnDefinitions>
+                                        <StackLayout
+                                            VerticalOptions="CenterAndExpand"
+                                            Grid.Row="0"
+                                            Grid.Column="0">
+                                            <Label
+                                                Text="Risco de Vida"
+                                                TextColor="Black"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="EndAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="1">
+                                            <Label
+                                                Text=" "
+                                                TextColor="Black"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="3">
+                                            <Label
+                                                Text="Sim"
+                                                TextColor="Green"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                        <StackLayout
+                                            HorizontalOptions="CenterAndExpand"
+                                            VerticalOptions="Center"
+                                            Grid.Row="0"
+                                            Grid.Column="4">
+                                            <Label
+                                                Text="Não"
+                                                TextColor="Red"
+                                                FontSize="22" />
+                                        </StackLayout>
+                                    </Grid>
+                                </StackLayout>
+                            </StackLayout>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout
+                        x:Name="stlRelatorio"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        AbsoluteLayout.LayoutFlags="SizeProportional"
+                        AbsoluteLayout.LayoutBounds="0,0,1,1">
+                        <ScrollView>
+                            <StackLayout
+                                Spacing="15"
+                                Padding="20">
+                                <Label
+                                    Text="Relatório de Atendimento"
+                                    TextColor="#77c300"
+                                    FontSize="26"
+                                    FontAttributes="Bold" />
+                                <Label
+                                    TextColor="Black"
+                                    HorizontalTextAlignment="Start"
+                                    FontSize="22"
+                                    Text="        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu efficitur ipsum, ac auctor leo. Sed id convallis dui, vitae porttitor diam. Sed ornare turpis eu condimentum vestibulum. Sed malesuada enim at porttitor pulvinar. Vestibulum ac venenatis mi. Nam at tempus lacus, ac cursus dui. Nulla facilisi. Donec sit amet ipsum urna. Quisque hendrerit libero sapien, sit amet tempus augue fermentum mollis. Aenean mattis, mauris finibus varius dignissim, nibh libero ullamcorper libero, a maximus nisi est eget dolor. Pellentesque ornare sagittis leo, vel lobortis ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lacinia, ligula ut ultrices faucibus, lorem erat rhoncus purus, nec finibus purus elit eget sapien. Nam eu nunc nec leo varius porta. Aenean justo lacus, lacinia in odio at, vehicula auctor quam." />
+                                <Label
+                                    TextColor="Black"
+                                    HorizontalTextAlignment="Start"
+                                    FontSize="22"
+                                    Text="        Nam pharetra nunc at placerat imperdiet. Cras non tellus commodo, cursus nisi eget, mollis augue. Quisque gravida ac urna eu suscipit. Phasellus ac ultrices orci. Suspendisse ut enim erat. Sed vitae fermentum dui. Aenean sit amet est id risus consectetur varius vel ac tortor. Ut vitae scelerisque lorem, eu vulputate nulla. In hac habitasse platea dictumst. Cras sodales porta tincidunt. Suspendisse semper at orci finibus posuere. Proin sed urna mattis, cursus eros vitae, pretium leo. In auctor enim ac augue gravida blandit. Nullam egestas fermentum ullamcorper. Nullam at faucibus augue, sit amet semper turpis. Nulla sit amet tincidunt justo." />
+                                <Label
+                                    TextColor="Black"
+                                    HorizontalTextAlignment="Start"
+                                    FontSize="22"
+                                    Text="        Quisque mauris nibh, blandit a varius quis, congue vitae ligula. Integer suscipit nulla et dolor dapibus ultricies. Praesent eu orci pretium, posuere elit non, vulputate turpis. In hac habitasse platea dictumst. Ut at nisi justo. Pellentesque rhoncus ipsum porttitor mauris pharetra varius. Fusce sit amet dignissim orci. Nullam non varius nisl. Sed porttitor, dui quis dapibus fringilla, metus sapien mattis mi, nec elementum tellus elit quis velit. Etiam sodales, ligula sit amet elementum semper, neque lacus fermentum metus, ac laoreet ipsum diam a velit. Sed quis elit ut augue vulputate venenatis. Aliquam ac dui interdum metus interdum interdum. Integer vel risus ligula. Duis orci risus, hendrerit in laoreet non, tincidunt sit amet ligula." />
+                                <Label
+                                    TextColor="Black"
+                                    HorizontalTextAlignment="Start"
+                                    FontSize="22"
+                                    Text="        Sed in mauris et ipsum sodales scelerisque quis at nunc. Curabitur bibendum urna in purus sagittis sollicitudin. Nunc nec efficitur justo, sit amet bibendum erat. Nunc non lorem purus. Mauris vitae lectus eget ex rutrum ultrices. Etiam dolor tellus, placerat at venenatis vel, mollis a sem. Nulla faucibus, turpis a volutpat aliquam, quam risus imperdiet eros, eget faucibus ligula velit vitae augue. Suspendisse euismod egestas orci non pulvinar. Maecenas augue tortor, pellentesque vel mauris quis, tincidunt eleifend est." />
+                                <Label
+                                    TextColor="Black"
+                                    HorizontalTextAlignment="Start"
+                                    FontSize="22"
+                                    Text="        Vestibulum ut lobortis ipsum. Sed posuere non diam et tristique. Duis dignissim quam eget risus consequat facilisis. Aenean turpis metus, congue vitae dolor in, convallis dapibus sem. Quisque sodales in turpis nec sollicitudin. Morbi consectetur libero at scelerisque dapibus. Nullam maximus justo vel metus vulputate, non fermentum mi finibus. Integer mollis tristique neque sed venenatis. Duis pulvinar vitae magna ut congue." />
+                            </StackLayout>
+                        </ScrollView>
+                    </StackLayout>
+                    <StackLayout
+                        x:Name="stlEncaminhamento"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Start"
+                        AbsoluteLayout.LayoutFlags="SizeProportional"
+                        AbsoluteLayout.LayoutBounds="0,0,1,1">
+                        <Grid
+                            HorizontalOptions="FillAndExpand">
+                            <Grid.RowDefinitions>
+                                <RowDefinition
+                                    Height="60" />
+                                <RowDefinition
+                                    Height="200" />
+                                <RowDefinition
+                                    Height="60" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition
+                                    Width="*" />
+                                <ColumnDefinition
+                                    Width="*" />
+                                <ColumnDefinition
+                                    Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <StackLayout
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="CenterAndExpand">
+                                <Label
+                                    Text="..."
+                                    FontSize="80"
+                                    FontAttributes="Bold"
+                                    TextColor="Black" />
+                            </StackLayout>
+                            <StackLayout
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="CenterAndExpand">
+                                <Label
+                                    Text="..."
+                                    FontSize="80"
+                                    FontAttributes="Bold"
+                                    TextColor="Black" />
+                            </StackLayout>
+                            <StackLayout
+                                Grid.Row="1"
+                                Grid.Column="2"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="CenterAndExpand">
+                                <Label
+                                    Text="..."
+                                    FontSize="80"
+                                    FontAttributes="Bold"
+                                    TextColor="Black" />
+                            </StackLayout>
+                            <StackLayout
+                                Grid.Row="2"
+                                Grid.Column="0"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="CenterAndExpand">
+                                <Label
+                                    Text="Portaria"
+                                    FontSize="26"
+                                    FontAttributes="Bold"
+                                    TextColor="#77c300" />
+                            </StackLayout>
+                            <StackLayout
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="CenterAndExpand">
+                                <Label
+                                    Text="Petição"
+                                    FontSize="26"
+                                    FontAttributes="Bold"
+                                    TextColor="#77c300" />
+                            </StackLayout>
+                            <StackLayout
+                                Grid.Row="2"
+                                Grid.Column="2"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="CenterAndExpand">
+                                <Label
+                                    Text="Arquivamento"
+                                    FontSize="26"
+                                    FontAttributes="Bold"
+                                    TextColor="#77c300" />
+                            </StackLayout>
+                        </Grid>
+                    </StackLayout>
+                </AbsoluteLayout>
+                <StackLayout
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    BackgroundColor="#444444"
+                    x:Name="stlPessoa">
+                    <StackLayout
+                        Orientation="Horizontal"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
+                        <StackLayout
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="CenterAndExpand">
+                            <Label
+                                Text="JOÃO DA SILVA"
+                                FontSize="30"
+                                x:Name="lblPessoa"
+                                TextColor="White"
+                                FontAttributes="Bold" />
+                            <Label
+                                Text="INFORMAÇÕES DO CIDADÃO"
+                                FontSize="18"
+                                TextColor="White" />
+                        </StackLayout>
+                        <StackLayout
+                            WidthRequest="100">
+                            <Label
+                                Text="-)" />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    BackgroundColor="#77c300"
+                    Orientation="Vertical"
+                    x:Name="stlCategorias">
+                    <StackLayout
+                        HeightRequest="15"
+                        VerticalOptions="End"
+                        Padding="20,0,0,0">
+                        <Label
+                            Text="CATEGORIAS"
+                            FontSize="15"
+                            TextColor="#666666"
+                            FontAttributes="Bold" />
+                    </StackLayout>
+                    <StackLayout
+                        HorizontalOptions="FillAndExpand"
+                        HeightRequest="90"
+                        Orientation="Horizontal">
+                        <StackLayout
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="Center"
+                            Orientation="Horizontal"
+                            Padding="5">
+                            <Frame
+                                BackgroundColor="#77c300"
+                                CornerRadius="25"
+                                OutlineColor="Black"
+                                HeightRequest="30">
+                                <StackLayout
+                                    Spacing="15"
+                                    Orientation="Horizontal">
+                                    <Label
+                                        Text="saúde"
+                                        TextColor="Black"
+                                        FontSize="20" />
+                                    <Image
+                                        Source="xisvermelho.png"
+                                        WidthRequest="30"
+                                        HeightRequest="30" />
+                                </StackLayout>
+                            </Frame>
+                            <Frame
+                                BackgroundColor="#77c300"
+                                CornerRadius="25"
+                                OutlineColor="Black"
+                                HeightRequest="30">
+                                <StackLayout
+                                    Spacing="15"
+                                    Orientation="Horizontal">
+                                    <Label
+                                        Text="medicamentos"
+                                        TextColor="Black"
+                                        FontSize="20" />
+                                    <Image
+                                        Source="xisvermelho.png"
+                                        WidthRequest="30"
+                                        HeightRequest="30" />
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                        <StackLayout
+                            HorizontalOptions="End"
+                            VerticalOptions="CenterAndExpand"
+                            WidthRequest="50"
+                            Spacing="20">
+                            <Label
+                                Text="+"
+                                FontSize="50"
+                                TextColor="#444444"
+                                FontAttributes="Bold" />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    Grid.RowSpan="2"
+                    BackgroundColor="#444444"
+                    IsVisible="false"
+                    x:Name="stlPessoaDetalhe">
+                    <Grid
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center">
+                        <Grid.RowDefinitions>
+                            <RowDefinition
+                                Height="130" />
+                            <RowDefinition
+                                Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition
+                                Width="2*" />
+                            <ColumnDefinition
+                                Width="3*" />
+                        </Grid.ColumnDefinitions>
+                        <StackLayout
+                            HorizontalOptions="CenterAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="1"
+                            Grid.Column="0">
+                            <Image Source="velho.jpeg" WidthRequest="250" HeightRequest="220" Aspect="AspectFit"/>
+                           
+                        </StackLayout>
+                        <StackLayout
+                            HorizontalOptions="StartAndExpand"
+                            Spacing="5"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Row="1"
+                            Grid.Column="1">
+                            <Label
+                                Text="CPF: 000.000.000-00"
+                                FontSize="20"
+                                TextColor="White"
+                                FontAttributes="Bold" />
+                            <Label
+                                Text=" "
+                                FontSize="20"
+                                TextColor="White"
+                                FontAttributes="Bold" />
+                            <Label
+                                Text="Processos anteriores"
+                                FontSize="20"
+                                TextColor="White"
+                                FontAttributes="Bold" />
+                            <Label
+                                Text="  JALSK399020930-2009"
+                                FontSize="20"
+                                TextColor="White"
+                                FontAttributes="Bold" />
+                            <Label
+                                Text="  JLFOAOSRIJA9834LAKJ-2013"
+                                FontSize="20"
+                                TextColor="White"
+                                FontAttributes="Bold" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+                <StackLayout
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    BackgroundColor="#444444"
+                    HorizontalOptions="FillAndExpand"
+                    Orientation="Horizontal">
+                    <Grid
+                        HorizontalOptions="FillAndExpand">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
+                            <ColumnDefinition
+                                Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Button
+                            Text="Atendimento"
+                            x:Name="btnAtendimento"
+                            Clicked="btnAtendimento_Clicked"
+                            Grid.Row="0"
+                            Grid.Column="0" />
+                        <Button
+                            Text="Relatório"
+                            x:Name="btnRelatorio"
+                            Clicked="btnRelatorio_Clicked"
+                            Grid.Row="0"
+                            Grid.Column="1" />
+                        <Button
+                            Text="Encaminhamento"
+                            x:Name="btnEncaminhamento"
+                            Clicked="btnEncaminhamento_Clicked"
+                            Grid.Row="0"
+                            Grid.Column="2" />
+                    </Grid>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
